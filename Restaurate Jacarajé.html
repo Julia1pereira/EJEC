@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="Arquivo.js"></script>
+
+        <title>Restaurante Jacarajé</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="nome_restaurante">Restaurante Jacarajé</h1>
+            <ul id="menu">
+              <li><a href="#cardapio">CARDÁPIO</a></li>
+              <li><a href="#cardapio_do_dia">CARDÁPIO DO DIA</a></li>
+            </ul>
+        </header>
+
+        <div class="sessao">
+            <h2>BEM-VINDOS!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut sunt ipsam quas laudantium voluptates, velit explicabo soluta id tempore enim nulla perferendis illo necessitatibus, sapiente earum error dolorem et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam, officiis illum consequatur, non nesciunt quidem delectus quasi architecto, quo culpa ex harum. Cum nisi assumenda placeat explicabo beatae sequi.</p>
+        </div>
+
+        <div class="sessao" style="align-items: center;">
+          <img id="decoracao" src="decoracao1.jpg">
+        </div>
+
+        <div class="sessao" id="cardapio">
+          <h2 style="margin-bottom: 0;">CARDÁPIO</h2>
+        </div>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img class="imagem" src="1.png">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img class="imagem" src="2.png">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img class="imagem" src="3.png">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img class="imagem" src="4.png">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img class="imagem" src="5.png">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="sessao" style="align-items: center;">
+          <img id="decoracao" src="decoracao2.jpg">
+        </div>
+
+        <div class="sessao" id="cardapio_do_dia">
+            <h2>CARDÁPIO DO DIA</h2>
+            <div id="cardapio_do_dia_abaixo">
+              <div class="composicao_imagem">
+                <img src="6.png" alt="Tapioca" style="width: 100%;">
+              </div>
+
+              <!--<div class="composicao_imagem" style="margin-top: 0px;">
+                <h4 style="margin: 0px;">DIA DA SEMANA</h4>
+                <ul style="list-style: none;">
+                  <li>Sarapatel</li>
+                  <li>Tapioca</li>
+                  <li>Acarajé</li>
+                  <li>Vatapá</li>
+                  <li>Caruru</li>
+                  <li>Moqueca</li>
+                  <li>Cuscuz</li>
+                  <li>Baião de Dois</li>
+                  <li>Escondidinho de Carne Seca</li>
+                  <li>Canjica</li>
+                  <li>Bolo de Rolo</li>
+                </ul>
+              </div>-->
+            </div>
+        </div>
+
+        <footer>
+          <div id="dados_formulario">
+            <div class="rodape">
+              <h4>ENDEREÇO</h4>
+              <p>Av. Abc, 0000</p>
+              <p>Bairro - Cidade - XX</p>
+              <p>30130-003</p>
+              <h5>CONTATO</h5>
+              <p>(00) 0000-0000</p>
+            </div>
+            <div class="rodape">
+              <h4>FALE COM A GENTE!</h4>
+              <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" id="nome" name="usuario_nome" />
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" id="email" name="usuario_email" />
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                    <br>
+                    <textarea id="msg" name="usuario_msg"></textarea>
+                </div>
+            
+                <div style="padding-top: 10px;">
+                    <a id="button">ENVIAR MENSAGEM</a>
+                </div>
+              </form>
+            </div>  
+          </div>
+            <div>
+              <p id="nome_final">RESTAURANTE JACARAJÉ</p>
+            </div>
+        </footer>
+    </body>
+</html>
